@@ -1,0 +1,54 @@
+CLASSES AND OBJECTS:
+  Class is a blueprint for creating objects that share common attributes(properties) and behaviour(methods). 
+  Object is an inbstance of class which can perform actions by invoking methods defined in class
+CONSTRUCTOR:
+  Constructor is a special method, invoked automatically when an object is created.
+  When you want to create an object with same set of values, we use default constructor. When you want to create an object with different set of values, use parameterised constuctor.
+Execution starts from main method in Java and in sequential order in Python.
+
+__str__ : It is a string representation of object. It is used to display the contents of the object.
+__init__ : It takes self as parameter which is used to refer to the current object.
+
+Example of default constructor : 
+    def __init__(self):
+      self.name = iare;
+      self.age = 25;
+It will create all objects with default values iare as name and 25 as age.
+
+Example of parameterised constructor:
+    def __init__(self, a,b):
+      self.name = a;
+      self.age =b;
+    def __str__(slef):
+      return f"{self.name}({self.age})"
+    yourObj = Yourclass("iare", 30)
+
+BANK MANAGEMENT SYSTEM:
+
+class BankAccount:
+	def __init__(self, account_number, account_holder, balance =0):
+		self.account_number = account_number
+		self.account_holder = account_holder
+		self.balance = balance
+	def deposit(self, amount):
+		self.balance += amount
+		print(f"\n Amount ${amount} deposited successfully")
+		self.display_account_details()
+	def withdraw(self, amount):
+		if amount < self.balance:
+			self.balance - = amount
+			printf(f"\n Amount ${amount} withdrawn successfully")
+			self.display_Account_details()
+		else:
+		print("Insufficient Balance")
+	def display_account_details(self):
+		print("\n account details")
+		print("\f Account number : {self.account_number}")
+		print("\f Account Holder: {self.account_holder}")
+		print("\f Balance : ${self.balance}")
+
+account = BankAccount("12345678910", "Rahul"
+account.deposit(5000)
+account.withdraw(2000)
+account.withdraw(4000)
+account.display_account_details()
