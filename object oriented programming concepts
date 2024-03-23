@@ -22,33 +22,3 @@ Example of parameterised constructor:
     def __str__(slef):
       return f"{self.name}({self.age})"
     yourObj = Yourclass("iare", 30)
-
-BANK MANAGEMENT SYSTEM:
-
-class BankAccount:
-	def __init__(self, account_number, account_holder, balance =0):
-		self.account_number = account_number
-		self.account_holder = account_holder
-		self.balance = balance
-	def deposit(self, amount):
-		self.balance += amount
-		print(f"\n Amount ${amount} deposited successfully")
-		self.display_account_details()
-	def withdraw(self, amount):
-		if amount < self.balance:
-			self.balance - = amount
-			printf(f"\n Amount ${amount} withdrawn successfully")
-			self.display_Account_details()
-		else:
-		print("Insufficient Balance")
-	def display_account_details(self):
-		print("\n account details")
-		print("\f Account number : {self.account_number}")
-		print("\f Account Holder: {self.account_holder}")
-		print("\f Balance : ${self.balance}")
-
-account = BankAccount("12345678910", "Rahul"
-account.deposit(5000)
-account.withdraw(2000)
-account.withdraw(4000)
-account.display_account_details()
